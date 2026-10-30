@@ -1,0 +1,74 @@
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+#scatterplot {
+    position: relative;
+}
+
+.chart-tooltip {
+    position: absolute;
+    z-index: 1;
+    max-width: 18rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.25rem;
+    background: rgba(62, 42, 32, 0.9);
+    color: #fffaf2;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    pointer-events: none;
+    transition: opacity 100ms ease;
+}
+
+.scatterplot-legend text {
+    fill: #342820;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.filters-heading {
+    margin: 0 0 0.75rem;
+    color: #3e2a20;
+    font-size: 1.1rem;
+}
+
+.filter-button {
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.55rem 1rem;
+    border: 2px solid #7e3517;
+    border-radius: 0.3rem;
+    background: #fbf6ec;
+    color: #54230f;
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 150ms ease, color 150ms ease;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+    background: #ead2b2;
+}
+
+.filter-button.is-active {
+    background: #b6531d;
+    color: #fffaf2;
+}
+
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 596px) {
+    .responsive-svg-container {
+        margin-bottom: 20px;
+    }
+}
+
+.axis-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    fill: #5a3e2b;
+}
